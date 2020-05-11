@@ -13,13 +13,14 @@ export const clearResults = () => {
 //   elements.resultDiv.insertAdjacentHTML("beforeend", markUp);
 // };
 
-export const renderResults = data => {
+export const renderResults = (data) => {
   //console.log(data);
   const { query, result } = data;
   console.log(data.result);
 
   const resultsArr = result.items;
-  resultsArr.forEach(element => {
+  resultsArr.forEach((element) => {
     console.log(element.accessInfo);
+    var data = JSON.parse(this.response);
   });
 };
